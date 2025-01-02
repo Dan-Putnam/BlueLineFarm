@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Line Farm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/BLF_CSS_Updated.css">
+</head>
+
+<body>
+
+    <!-- Navbar placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Premium Quality Beef Delivered to Your Door</h1>
+    </div>
+
+    <!-- Main Content Sections -->
+    <div class="container my-5 content">
+        <h2 class="section-title">Our Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/cowcuts.jpg" alt="BEEF">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Beef Cuts</h5>
+                        <p class="card-text">Explore our selection of
+                            high-quality beef cuts, from steaks to ground
+                            beef.</p>
+                        <a href="BEEF.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/EXAMPLEMERCH.jpg" alt="Merchandise">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Line Farm Merch</h5>
+                        <p class="card-text">Get your Blue Line Farm
+                            merchandise, from shirts to accessories.</p>
+                        <a href="Merch.html" class="btn btn-primary">Shop Merch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/about_us.png" alt="Special Offers">
+                    <div class="card-body">
+                        <h5 class="card-title">About Us</h5>
+                        <p class="card-text">Meet the team and our history, to understand how we started our farm or contact our team directly.
+                        </p>
+                        <a href="About_Us.html" class="btn btn-primary">About Us</a>
+                        <a href="Contact_Us.html" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Gallary Sections -->
+    <div class="container my-5">
+        <h2 class="section-title">Gallary</h2>
+        <div class="row py-3">
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="card">
+                    <img src="Images/Cow1.jpg" alt="Cow1" class="gallaryImg rounded">
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="card">
+                    <img src="Images/Cow2.jpg" alt="Cow1" class="gallaryImg rounded">
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="card">
+                    <img src="Images/Cow3.jpg" alt="Cow1" class="gallaryImg rounded">
+                </div>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="card">
+                    <img src="Images/Cow4.jpg" alt="Cow1" class="gallaryImg rounded">
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="card">
+                    <img src="Images/Cow5.jpg" alt="Cow1" class="gallaryImg rounded">
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="card">
+                    <img src="Images/Cow6.jpg" alt="Cow1" class="gallaryImg rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load Navbar -->
+    <script>
+        // Fetch the navbar HTML content from Navbar.html
+        fetch('Navbar.html')
+            .then(response => response.text())  // Convert the response to text
+            .then(data => {
+                // Inject the content into the div with id "navbar-placeholder"
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(err => console.log('Error loading navbar:', err));
+
+        // Fetch the navbar HTML content from Navbar.html
+        fetch('Footer.html')
+            .then(response => response.text())  // Convert the response to text
+            .then(data => {
+                // Inject the content into the div with id "navbar-placeholder"
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(err => console.log('Error loading footer:', err));
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            // Scroll to the top of the page when the page is fully loaded
+            window.scrollTo(0, 0);
+        });
+    </script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+</html>

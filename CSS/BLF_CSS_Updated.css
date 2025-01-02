@@ -1,0 +1,134 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 0px black,
+        /* Horizontal, Vertical, Blur Radius, Color */
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+    ;
+    background-image: url(/Images/Barn1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: black;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar a {
+    color: lightblue;
+}
+
+.navbar-brand {
+    font-size: clamp(40px, 4vw, 100px);
+}
+
+#blue-line {
+    position: relative;
+    display: inline-block;
+}
+
+#blue-line::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    /* Start with no width */
+    height: 5px;
+    /* Adjust line thickness */
+    background-color: blue;
+    /* Blue color */
+    transition: width 0.6s ease;
+    /* Smooth transition */
+}
+
+/* On hover, expand the width of the blue line */
+#blue-line:hover::after {
+    width: 100%;
+    /* Expand the line to full width */
+}
+
+#navbarNav {
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+.hero-section {
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-shrink: 0;
+}
+
+.hero-section h1 {
+    font-size: clamp(30px, 3.5vw, 50px);
+    font-weight: bold;
+    color: lightblue;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(30px, 3vw, 100px);
+    color: dodgerblue;
+}
+
+.container h2 {
+    background-color: lightblue;
+    border: 2px solid Black;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-shadow: none;
+    background-color: lightblue;
+}
+
+.card img {
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    text-align: center;
+}
+
+footer {
+    background-color: #343a40;
+    color: lightblue;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.logo {
+    max-height: clamp(64px, 10vw, 200px);
+    margin-right: 10px;
+    border: 5px solid black;
+    border-width: thick;
+}
+
+.gallaryImg {
+    border: 3px solid black;
+}
+
+.content {
+    flex: 1; /* This ensures content takes up remaining space */
+}
